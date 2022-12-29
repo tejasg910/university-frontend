@@ -29,7 +29,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false);
   const checkAdmin = async (cookie) => {
 
-    const response = await fetch(`${HOST}:${PORT}/api/sendemail`, {
+    const response = await fetch(`${HOST}/api/sendemail`, {
       method: "POST",
       headers: {
         "Content-Type": "Application/json",

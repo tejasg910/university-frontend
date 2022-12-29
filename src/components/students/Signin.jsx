@@ -32,7 +32,7 @@ const Signin = () => {
     const onHandleSubmit = async () => {
 
 
-        const response = await fetch(`${HOST}:${PORT}/api/login`, {
+        const response = await fetch(`${HOST}/api/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json",

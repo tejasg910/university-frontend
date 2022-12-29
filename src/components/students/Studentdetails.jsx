@@ -40,7 +40,7 @@ export default function StudentDetails() {
     const getData = async () => {
 
 
-        const a = await fetch(`${HOST}:${PORT}/api/getstudentinfo`, {
+        const a = await fetch(`${HOST}/api/getstudentinfo`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export default function StudentDetails() {
     }
     const SubmitDetails = async (e) => {
         e.preventDefault()
-        const a = await fetch(`${HOST}:${PORT}/api/studentinfo`, {
+        const a = await fetch(`${HOST}/api/studentinfo`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

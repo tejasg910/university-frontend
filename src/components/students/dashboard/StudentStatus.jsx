@@ -26,7 +26,7 @@ const StudentStatus = () => {
     }, [email]);
     const getData = async () => {
 
-        const a = await fetch(`${HOST}:${PORT}/api/getstudentinfo`, {
+        const a = await fetch(`${HOST}/api/getstudentinfo`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

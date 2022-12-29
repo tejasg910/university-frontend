@@ -35,7 +35,7 @@ const SigninAdmin = ({ email }) => {
     const onHandleSubmit = async () => {
 
 
-        const response = await fetch(`${HOST}:${PORT}/api/teacherlogin`, {
+        const response = await fetch(`${HOST}/api/teacherlogin`, {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json",

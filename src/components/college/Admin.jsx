@@ -14,7 +14,7 @@ const Admin = () => {
     }, [email]);
 
     const checkAdmin = async () => {
-        const a = await fetch(`${HOST}:${PORT}/api/checkteacher`, {
+        const a = await fetch(`${HOST}/api/checkteacher`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ const TeacherDashboard = () => {
     const getData = async () => {
         if (localStorage.getItem('fmstoken')) {
             const token = localStorage.getItem('fmstoken')
-            const response = await fetch(`${HOST}:${PORT}/api/teacherdashboard?token=${token}`)
+            const response = await fetch(`${HOST}/api/teacherdashboard?token=${token}`)
             const data = await response.json();
             console.log(data)
             if (data.success) {
@@ -38,7 +38,7 @@ const TeacherDashboard = () => {
         setShowList(false)
         let students = localStorage.getItem('fmsstudentdata');
         students = JSON.parse(students)
-        const a = await fetch(`${HOST}:${PORT}/api/getallcourses`, {
+        const a = await fetch(`${HOST}/api/getallcourses`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ const TeacherDashboard = () => {
 
 
     const saveProgress = async (index, email) => {
-        const a = await fetch(`${HOST}:${PORT}/api/updatecoursestatus`, {
+        const a = await fetch(`${HOST}/api/updatecoursestatus`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
