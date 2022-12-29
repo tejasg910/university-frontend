@@ -30,7 +30,7 @@ const Signup = () => {
 
 
 
-        const response = await fetch(`${HOST}:${PORT}/api/register`, {
+        const response = await fetch(`${HOST}/api/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json",
