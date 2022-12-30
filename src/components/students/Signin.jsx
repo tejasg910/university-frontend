@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Cookies from 'universal-cookie';
 import { useSelector, useDispatch } from 'react-redux'
+import { BiHide, BiShowAlt } from 'react-icons/bi';
 
 import { loginSuccess, loginFalse } from '../../app/reducer/reducer'
 import { ToastContainer, toast } from 'react-toastify';
@@ -13,6 +14,9 @@ const Signin = () => {
     const HOST = import.meta.env.VITE_HOST
     const PORT = import.meta.env.VITE_PORT
     const cookies = new Cookies();
+    const [showPass, setShowPass] = useState(false)
+    // const [passType, setPassType] = useState(false)
+
     const [userDetails, setUserDetails] = useState({
         email: "",
         password: ""
@@ -85,6 +89,14 @@ const Signin = () => {
 
 
     }
+
+    const onHandleShowPass = () => {
+        if (showPass === true) {
+            setShowPass(false)
+        } else {
+            setShowPass(true)
+        }
+    }
     return (
         <div>
             <ToastContainer
@@ -112,20 +124,24 @@ const Signin = () => {
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="email"
                             placeholder="Email" />
+                        <div className='relative '>
 
-                        <input
-                            onChange={onHandleChange}
-                            value={userDetails.password}
-                            type="password"
-                            className="block border border-grey-light w-full p-3 rounded mb-4"
-                            name="password"
-                            placeholder="Password" />
+                            <input
+                                onChange={onHandleChange}
+                                value={userDetails.password}
+                                type={showPass ? "text" : "password"}
+                                className="block border border-grey-light w-full p-3 rounded mb-4"
+                                name="password"
+                                placeholder="Password" />
+                            {showPass && <span className='absolute right-3 top-4' onClick={onHandleShowPass}><BiShowAlt /></span>}
+                            {!showPass && <span className='absolute right-3 top-4' onClick={onHandleShowPass}><BiHide /></span>}
 
+                        </div>
 
                         <button
                             onClick={onHandleSubmit}
                             className="w-full text-center py-3 bg-green-600 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
-                        >Create Account</button>
+                        >Sign in</button>
 
 
                     </div>

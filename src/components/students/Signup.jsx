@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 const PORT = import.meta.env.VITE_PORT
 const HOST = import.meta.env.VITE_HOST
 import Cookies from 'universal-cookie';
+import { BiHide, BiShowAlt } from 'react-icons/bi';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,6 +11,8 @@ const Signup = () => {
 
 
     const navigate = useNavigate();
+    const [showPass, setShowPass] = useState(false)
+
     const [userDetails, setuserDetails] = useState({
         name: "",
         email: "",
@@ -75,6 +78,14 @@ const Signup = () => {
     }
 
 
+    const onHandleShowPass = () => {
+        if (showPass === true) {
+            setShowPass(false)
+        } else {
+            setShowPass(true)
+        }
+    }
+
     return (
         <div>
             <ToastContainer
@@ -116,14 +127,19 @@ const Signup = () => {
                             className="block border border-grey-light w-full p-3 rounded mb-4"
                             name="password"
                             placeholder="Password" />
-                        <input
-                            onChange={onHandleChange}
-                            value={userDetails.cpassword}
-                            type="password"
-                            className="block border border-grey-light w-full p-3 rounded mb-4"
-                            name="cpassword"
-                            placeholder="Confirm Password" />
+                        <div className='relative'>
 
+                            <input
+                                onChange={onHandleChange}
+                                value={userDetails.cpassword}
+                                type={showPass ? "text" : "password"}
+                                className="block border border-grey-light w-full p-3 rounded mb-4"
+                                name="cpassword"
+                                placeholder="Confirm Password" />
+                            {showPass && <span className='absolute right-3 top-4' onClick={onHandleShowPass}><BiShowAlt /></span>}
+                            {!showPass && <span className='absolute right-3 top-4' onClick={onHandleShowPass}><BiHide /></span>}
+
+                        </div>
                         <button
                             onClick={onHandleSubmit}
                             className="w-full text-center py-3 rounded bg-green-600 text-white hover:bg-green-dark focus:outline-none my-1"
