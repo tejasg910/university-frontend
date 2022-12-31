@@ -9,21 +9,21 @@ const Pricing = () => {
   return (
     <div>
       <div className="flex flex-col sm:flex-row items-center space-x-4 space-y-4 justify-center m-4">
-        <div class="w-64 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
-          <p class="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50">
+        <div className="w-64 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
+          <p className="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50">
             Entreprise
           </p>
-          <p class="text-3xl font-bold text-green-700 dark:text-white">
+          <p className="text-3xl font-bold text-green-700 dark:text-white">
             $0
-            <span class="text-sm text-gray-300">/ month</span>
+            <span className="text-sm text-gray-300">/ month</span>
           </p>
-          <p class="mt-4 text-xs text-gray-600 dark:text-gray-100">
+          <p className="mt-4 text-xs text-gray-600 dark:text-gray-100">
             For most businesses that want to optimize web queries.
           </p>
-          <ul class=" mt-6 mb-6 text-sm text-gray-600 dark:text-gray-100">
-            <li class="mb-3 flex items-center ">
+          <ul className=" mt-6 mb-6 text-sm text-gray-600 dark:text-gray-100">
+            <li className="mb-3 flex items-center ">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -35,9 +35,9 @@ const Pricing = () => {
               </svg>
               4 Years program
             </li>
-            <li class="mb-3 flex items-center ">
+            <li className="mb-3 flex items-center ">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -50,12 +50,12 @@ const Pricing = () => {
               Degree certification
             </li>
 
-            <li class="mb-3 flex items-center opacity-50">
+            <li className="mb-3 flex items-center opacity-50">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 fill="red"
                 viewBox="0 0 1792 1792"
               >
@@ -63,12 +63,12 @@ const Pricing = () => {
               </svg>
               Placement support
             </li>
-            <li class="mb-3 flex items-center opacity-50">
+            <li className="mb-3 flex items-center opacity-50">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 fill="red"
                 viewBox="0 0 1792 1792"
               >
@@ -76,12 +76,12 @@ const Pricing = () => {
               </svg>
               Mock interviews
             </li>
-            <li class="mb-3 flex items-center opacity-50">
+            <li className="mb-3 flex items-center opacity-50">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 fill="red"
                 viewBox="0 0 1792 1792"
               >
@@ -89,12 +89,12 @@ const Pricing = () => {
               </svg>
               Internship opportunities
             </li>
-            <li class="mb-3 flex items-center opacity-50">
+            <li className="mb-3 flex items-center opacity-50">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 fill="red"
                 viewBox="0 0 1792 1792"
               >
@@ -105,25 +105,25 @@ const Pricing = () => {
           </ul>
           <button
             type="button"
-            class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+            className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
           >
             Choose plan
           </button>
         </div>
 
-        <div class="w-64  p-4 bg-indigo-500 shadow-lg rounded-2xl dark:bg-gray-800">
-          <div class="flex items-center justify-between text-white">
-            <p class="mb-4 text-4xl font-medium">Pro</p>
-            <p class="flex flex-col text-3xl font-bold">
+        <div className="w-64  p-4 bg-indigo-500 shadow-lg rounded-2xl dark:bg-gray-800">
+          <div className="flex items-center justify-between text-white">
+            <p className="mb-4 text-4xl font-medium">Pro</p>
+            <p className="flex flex-col text-3xl font-bold">
               $299
-              <span class="text-sm font-thin text-right">Year</span>
+              <span className="text-sm font-thin text-right">Year</span>
             </p>
           </div>
-          <p class="mt-4 text-white text-md">Plan include :</p>
-          <ul class=" mt-6 mb-6 text-sm text-white">
-            <li class="mb-3 flex items-center ">
+          <p className="mt-4 text-white text-md">Plan include :</p>
+          <ul className=" mt-6 mb-6 text-sm text-white">
+            <li className="mb-3 flex items-center ">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -135,9 +135,9 @@ const Pricing = () => {
               </svg>
               4 Years program
             </li>
-            <li class="mb-3 flex items-center ">
+            <li className="mb-3 flex items-center ">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -149,9 +149,9 @@ const Pricing = () => {
               </svg>
               Degree completion
             </li>
-            <li class="mb-3 flex items-center ">
+            <li className="mb-3 flex items-center ">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -163,9 +163,9 @@ const Pricing = () => {
               </svg>
               Placement support
             </li>
-            <li class="mb-3 flex items-center ">
+            <li className="mb-3 flex items-center ">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -177,9 +177,9 @@ const Pricing = () => {
               </svg>
               Mock interviews
             </li>
-            <li class="mb-3 flex items-center ">
+            <li className="mb-3 flex items-center ">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -191,9 +191,9 @@ const Pricing = () => {
               </svg>
               Internship opportunities
             </li>
-            <li class="mb-3 flex items-center">
+            <li className="mb-3 flex items-center">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -205,9 +205,9 @@ const Pricing = () => {
               </svg>
               Additional certifications
             </li>
-            <li class="mb-3 flex items-center">
+            <li className="mb-3 flex items-center">
               <svg
-                class="w-6 h-6 mr-2"
+                className="w-6 h-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 width="6"
                 height="6"
@@ -222,63 +222,63 @@ const Pricing = () => {
           </ul>
           <button
             type="button"
-            class="w-full px-3 py-3 text-sm text-indigo-500 bg-white rounded-lg shadow hover:bg-gray-100 "
+            className="w-full px-3 py-3 text-sm text-indigo-500 bg-white rounded-lg shadow hover:bg-gray-100 "
           >
             Choose plan
           </button>
         </div>
       </div>
 
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-green-700">
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-green-700">
               Performance{" "}
             </h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Here is our statistics about our performance in short manner.
               Shows placement support is guaranteed if you chose paid plan.
             </p>
           </div>
-          <div class="flex flex-wrap -m-4 text-center">
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2  border-gray-200 px-4 py-6 rounded-lg">
+          <div className="flex flex-wrap -m-4 text-center">
+            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2  border-gray-200 px-4 py-6 rounded-lg">
                 <BsBuilding className="mx-auto text-4xl text-green-500" />
 
-                <h2 class="title-font font-medium text-3xl text-green-700">
+                <h2 className="title-font font-medium text-3xl text-green-700">
                   2.7K
                 </h2>
-                <p class="leading-relaxed">Students placed per year</p>
+                <p className="leading-relaxed">Students placed per year</p>
               </div>
             </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <AiOutlineUserAdd className="mx-auto text-4xl text-green-500" />
 
-                <h2 class="title-font font-medium text-3xl text-green-700">
+                <h2 className="title-font font-medium text-3xl text-green-700">
                   2.7K
                 </h2>
-                <p class="leading-relaxed">Students Enrolled per year</p>
+                <p className="leading-relaxed">Students Enrolled per year</p>
               </div>
             </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <BsBarChartLineFill className="mx-auto text-4xl text-green-500" />
 
-                <h2 class="title-font font-medium text-3xl text-green-700">
+                <h2 className="title-font font-medium text-3xl text-green-700">
                   500+
                 </h2>
-                <p class="leading-relaxed">Hiring Partners</p>
+                <p className="leading-relaxed">Hiring Partners</p>
               </div>
             </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <GiChart className="mx-auto text-4xl text-green-500" />
 
-                <h2 class="title-font font-medium text-3xl text-green-700">
+                <h2 className="title-font font-medium text-3xl text-green-700">
                   27%
                 </h2>
-                <p class="leading-relaxed">Hike every year</p>
+                <p className="leading-relaxed">Hike every year</p>
               </div>
             </div>
           </div>

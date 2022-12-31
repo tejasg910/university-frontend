@@ -18,6 +18,7 @@ import StudentDetails from './components/students/Studentdetails'
 import Studentdashboard from './components/students/Studentdashboard'
 import Admin from './components/college/Admin'
 import TeacherDashboard from './components/college/sign/TeacherDashboard'
+import Editstudent from './components/college/sign/Editstudent'
 function App() {
   const isLogin = useSelector((state) => state.counter.isLogin)
 
@@ -84,6 +85,8 @@ function App() {
           <Route path="/student/editdetails" element={<StudentDetails />} />
           <Route path="/student/studentdashboard" element={<Studentdashboard />} />
           <Route path="/admin/teacherdashboard" element={<TeacherDashboard />} />
+          <Route path="/admin/teacherdashboard/editstudent" element={<Editstudent />} />
+
 
 
 
