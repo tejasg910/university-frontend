@@ -67,25 +67,25 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Home />} />
-          <Route path="/about" element={<Home />} />
-          <Route path="/privacy" element={<Home />} />
-          <Route path="/dashboard" element={<Home />} />
-          <Route path="/api/admin" element={<Admin />} />
-          <Route path="/dashboard/student/signin" element={<Home />} />
-          <Route path="/admission" element={<Home />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/features" element={<Home />} />
-          <Route path="/details" element={<Details />} />
-          <Route path="/team" element={<Teams />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/student/editdetails" element={<StudentDetails />} />
-          <Route path="/student/studentdashboard" element={<Studentdashboard />} />
-          <Route path="/admin/teacherdashboard" element={<TeacherDashboard />} />
-          <Route path="/admin/teacherdashboard/editstudent" element={<Editstudent />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/contact" element={<Home />} />
+          <Route exact path="/about" element={<Home />} />
+          <Route exact path="/privacy" element={<Home />} />
+          <Route exact path="/dashboard" element={<Home />} />
+          <Route exact path="/api/admin" element={<Admin />} />
+          <Route exact path="/dashboard/student/signin" element={<Home />} />
+          <Route exact path="/admission" element={<Home />} />
+          <Route exact path="/courses" element={<Courses />} />
+          <Route exact path="/features" element={<Home />} />
+          <Route exact path="/details" element={<Details />} />
+          <Route exact path="/team" element={<Teams />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/signin" element={<Signin />} />
+          <Route exact path="/pricing" element={<Pricing />} />
+          <Route exact path="/student/editdetails" element={<StudentDetails />} />
+          <Route exact path="/student/studentdashboard" element={<Studentdashboard />} />
+          <Route exact path="/admin/teacherdashboard" element={<TeacherDashboard />} />
+          <Route exact path="/admin/teacherdashboard/editstudent" element={<Editstudent />} />
 
 
 
