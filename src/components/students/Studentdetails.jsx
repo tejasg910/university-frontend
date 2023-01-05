@@ -27,7 +27,10 @@ export default function StudentDetails() {
         city: "",
         country: "United States",
         address: "",
-        id: ""
+        id: "",
+        dob: "",
+        gender: "",
+        mobile: ""
 
     })
     useEffect(() => {
@@ -56,7 +59,7 @@ export default function StudentDetails() {
 
         if (res.data) {
             const user = res.data;
-            setUserDetails({ firstName: user.firstName, lastName: user.lastName, address: user.address, country: user.country, state: user.state, pin: user.pinCode, id: user.registerId, city: user.city })
+            setUserDetails({ firstName: user.firstName, lastName: user.lastName, address: user.address, country: user.country, state: user.state, pin: user.pinCode, id: user.registerId, city: user.city, mobile: user.mobile, gender: user.gender, dob: user.birthdate })
 
         } else {
 
@@ -79,6 +82,7 @@ export default function StudentDetails() {
 
     }
     const SubmitDetails = async (e) => {
+        console.log(userDetails)
         e.preventDefault()
         const a = await fetch(`${HOST}/api/studentinfo`, {
             method: 'POST', // or 'PUT'
@@ -87,6 +91,8 @@ export default function StudentDetails() {
             },
             body: JSON.stringify({ userDetails, email }),
         })
+
+
 
 
         const res = await a.json();
@@ -122,6 +128,7 @@ export default function StudentDetails() {
         }
 
     }
+    console.log(userDetails.mobile.value)
 
     return (
         <>
@@ -322,6 +329,21 @@ export default function StudentDetails() {
                                                 disabled
                                             />
                                         </div>
+                                        <div className="col-span-6 sm:col-span-4">
+                                            <label htmlFor="mobile" className="block text-sm font-medium text-gray-700">
+                                                Mobile Number
+                                            </label>
+                                            <input
+                                                onChange={onDetails}
+                                                value={userDetails.mobile}
+                                                type="text"
+                                                name="mobile"
+                                                id="mobile"
+                                                autoComplete="mobile"
+                                                className="mt-1 p-2 outline-none  block w-full rounded-md border border-pink-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+
+                                            />
+                                        </div>
 
                                         <div className="col-span-6 sm:col-span-3">
                                             <label htmlFor="country" className="block text-sm font-medium text-gray-700">
@@ -341,6 +363,32 @@ export default function StudentDetails() {
                                                 <option>India</option>
 
                                             </select>
+
+
+                                            <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                                                Gender
+                                            </label>
+                                            <select
+                                                onChange={onDetails}
+
+                                                value={userDetails.gender}
+                                                id="gender"
+                                                name="gender"
+
+                                                className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                            >
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Others</option>
+
+
+                                            </select>
+
+
+                                            <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                                                Date of Birth
+                                            </label>
+                                            <input type="date" placeholder="Enter date of birth" name="dob" value={userDetails.dob} onChange={onDetails} />
                                         </div>
 
                                         <div className="col-span-6">
