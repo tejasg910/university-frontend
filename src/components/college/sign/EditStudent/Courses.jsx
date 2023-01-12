@@ -4,6 +4,7 @@ import { BsFiles, BsNodeMinusFill } from 'react-icons/bs';
 import { CiBaseball, CiNoWaitingSign } from 'react-icons/ci';
 import { BsCalendarDate } from 'react-icons/bs';
 import { useLocation } from 'react-router-dom';
+import EditCourse from './EditCourse';
 const Courses = () => {
     const search = useLocation().search;
 
@@ -11,7 +12,13 @@ const Courses = () => {
     const HOST = import.meta.env.VITE_HOST
 
     const [courses, setCourses] = useState([])
+    const [openPopUp, setOpenPopUp] = useState(false)
+    const [courseDetail, setCourseDetail] = useState({
+        percent: "",
+        status: "active",
+        id: ""
 
+    })
 
     const getDetails = async () => {
         let students = localStorage.getItem('fmsstudentdata');
@@ -33,9 +40,16 @@ const Courses = () => {
     useEffect(() => {
         getDetails()
     }, []);
-    const onHandlePercent = (e) => {
-
-
+    const onHandlePercent = (percent, status, id) => {
+        setCourseDetail({
+            percent: Number.parseInt(percent),
+            status: status,
+            id: id
+        })
+        if (openPopUp === false) {
+            setOpenPopUp(true)
+            console.log(courseDetail)
+        }
     }
     return (
         <div>
@@ -43,6 +57,8 @@ const Courses = () => {
                 <div>
                     <h2>Student Details</h2>
                 </div>
+
+                {openPopUp && <EditCourse percent={courseDetail.percent} popup={setOpenPopUp} status={"active"} id={courseDetail.id} />}
                 {courses.map((value, index) => {
                     return <div key={index} className='flex w-full relative flex-col lg:flex-row bg-slate-50 shadow-lg '>
                         <div className='p-4 lg:w-1/2'>
@@ -67,6 +83,9 @@ const Courses = () => {
                                     <li className='flex items-center '>
                                         <CiNoWaitingSign /> : {value.end}
                                     </li>
+                                    <li>
+                                        <button className='bg-gray-300 px-2 font-bold rounded-sm' onClick={() => { onHandlePercent(value.status, "active", value._id) }}>Edit</button>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="w-full bg-gray-200  dark:bg-gray-700">
@@ -75,6 +94,7 @@ const Courses = () => {
                             <div>
 
                                 <span className='absolute right-2 sm:right-8 top-4 lg:top-16  p-2 text-green-500'>{value.status} completed</span>
+
                             </div>
                         </div>
 

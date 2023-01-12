@@ -104,11 +104,11 @@ const Navbar = () => {
                         className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
+                        <ul className="items-center justify-center  space-y-8 md:flex md:space-x-6 md:space-y-0">
+                            <li className="text-gray-600  hover:text-blue-600">
                                 <Link to={"/"}>Home</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
+                            <li className="text-gray-600  hover:text-blue-600">
                                 <Link to={"/team"} >Team</Link>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
@@ -131,7 +131,7 @@ const Navbar = () => {
 
                             {show && <div className='text-white p-4 bg-indigo-500 rounded-md shadow-lg absolute top-14 right-12 z-10 ' >
                                 <ul className='space-y-4'>
-                                    <Link to={"/student/studentdashboard"}>  <li onClick={() => { setShow(false) }}>Dashboard</li></Link>
+                                    <Link to={"/student/studentdashboard"} className="">   <li onClick={() => { setShow(false) }} className={`border-b-2`}>Dashboard</li></Link>
                                     <Link to={"/student/editdetails"}>  <li onClick={() => { setShow(false) }}>Edit details</li></Link>
                                     <Link to={"/"}><li onClick={Logout}>Log out</li></Link>
                                     <button className='bg-red-600 text-white px-4 rounded-md border border-black' onClick={() => { setShow(false) }}>Close</button>
