@@ -58,7 +58,7 @@ const Navbar = () => {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link to={"/"}>
-                            <img src="/freemesikho.png" alt="" width={50} />
+                            <img src="https://ik.imagekit.io/hsxxzalwq/public/freemesikho.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676991822873" alt="" width={50} />
 
                         </Link>
                         <div className="md:hidden">

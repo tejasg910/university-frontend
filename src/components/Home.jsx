@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <div className='relative bg-black'>
         <div>
-          <img className='opacity-60' src="/university.jpg" alt="" />
+          <img className='opacity-60' src="https://ik.imagekit.io/hsxxzalwq/public/university.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676991835566" alt="" />
         </div>
         <div className='lg:w-1/2 p-4 absolute right-0 top-1 lg:top-32'>
           <h2 className='text-xl sm:text-2xl md:text-3xl  font-bold text-pink-500'>INSPIRATION, INNOVATION and DISCOVERY</h2>
@@ -27,14 +27,14 @@ const Home = () => {
           <button className='bg-pink-500 mt-2 mx-1 sm:mx-4 sm:font-bold border text-white border-black px-2 sm:px-4 py-1 transition-all duration-200 hover:bg-transparent hover:text-pink-500'>Learn More</button>
         </div>
         <div className=''>
-          <img className='h-[50vh] hidden sm:block' src="freemesikho.png" alt="" height={1} />
+          <img className='h-[50vh] hidden sm:block' src="https://ik.imagekit.io/hsxxzalwq/public/freemesikho.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676991822873" alt="" height={1} />
         </div>
       </div>
 
 
       <div className='flex justify-center items-center'>
         <div className='hidden sm:w-1/2 sm:block mt-4'>
-          <img src="features.jpg" alt="" />
+          <img src="https://ik.imagekit.io/hsxxzalwq/public/features.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676991833088" alt="" />
         </div>
         <div className='sm:w-1/2 flex flex-col items-center'>
           <h2>Our courses </h2>

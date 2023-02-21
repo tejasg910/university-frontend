@@ -8,7 +8,7 @@ const Courses = () => {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/web.jpg" alt="blog" />
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://ik.imagekit.io/hsxxzalwq/public/web.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676991826747" alt="blog" />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FREEMESIKHO</h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">WEB DEVELOPMENT</h1>
@@ -27,7 +27,7 @@ const Courses = () => {
             </div>
             <div className="p-4 md:w-1/2">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/android.png" alt="blog" />
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://ik.imagekit.io/hsxxzalwq/public/androidreal.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676991832998" alt="blog" />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FREEMESIKHO</h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">ANDROID DEVELOPMENT</h1>
@@ -46,7 +46,7 @@ const Courses = () => {
             </div>
             <div className="p-4 md:w-1/2">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/data.png" alt="blog" />
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://ik.imagekit.io/hsxxzalwq/public/data.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676991827299" alt="blog" />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FREEMESIKHO</h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">DATA SCIENCE</h1>
@@ -65,7 +65,7 @@ const Courses = () => {
             </div>
             <div className="p-4 md:w-1/2">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/machine.png" alt="blog" />
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://ik.imagekit.io/hsxxzalwq/public/machine.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676991835823" alt="blog" />
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FREEMESIKHO</h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">MACHINE LEARNING </h1>

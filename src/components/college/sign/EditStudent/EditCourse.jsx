@@ -6,15 +6,27 @@ const EditCourse = ({ percent, status, popup, id }) => {
 
     const [isOpen, setIsOpen] = useState(false)
     const [progress, setProgress] = useState(percent)
+    const [active, setActive] = useState('inactive')
 
 
     const onHandleSave = () => {
+
+
+
         setIsOpen(!isOpen)
+
+
         popup(false)
+
+
     }
 
     const onHandleChange = (e) => {
         setProgress(e.target.value)
+        if (e.target.name === "status") {
+            setActive(e.target.value)
+
+        }
     }
 
     useEffect(() => {
@@ -25,7 +37,7 @@ const EditCourse = ({ percent, status, popup, id }) => {
 
 
             <section className='flex   justify-center items-center flex-col animation-fade-in duration-500 ease-linear'>
-                <div className='space-y-4 '>
+                <div className='space-y-4 ' style={{ border: "1px solid black", padding: "4px" }}>
 
 
                     <div>
